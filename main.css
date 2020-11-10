@@ -1,0 +1,909 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+body {
+	font-family: "Noto Sans KR", sans-serif;
+}
+.wrap {
+	width: 100%;
+	min-width: 1200px;
+}
+body .inner {
+	width: 1200px;
+	margin: 0 auto;
+}
+.util {
+	font-size: 14px;
+	color: #403f3a;
+	position: relative;
+	overflow: hidden;
+}
+
+.util > .left > li > a {
+	float: left;
+	margin-top: 50px;
+	margin-bottom: 57px;
+}
+.drop_global ul {
+	position: absolute;
+	top: 68px;
+	left: 3px;
+	width: 70px;
+	height: 100px;
+	background: #fff;
+	display: none;
+}
+.drop_global:hover ul {
+	display: block;
+}
+.drop_global li:hover a {
+	text-decoration: underline;
+}
+.util > .left ul li {
+	line-height: 20px;
+}
+.util .left li:hover a {
+	color: #610200;
+}
+
+.earth_icon {
+	background: url(../img/layout/earth_icon.png) no-repeat center center;
+	width: 19px;
+	height: 18px;
+	text-indent: -9999px;
+}
+.search_icon {
+	background: url(../img/layout/search_icon.png) no-repeat;
+	width: 18px;
+	height: 18px;
+	text-indent: -9999px;
+}
+
+.util .right {
+	overflow: hidden;
+	float: right;
+}
+.util .right li {
+	float: left;
+	margin-top: 50px;
+	margin-left: 17px;
+	position: relative;
+}
+.util .right li:hover a {
+	text-decoration: underline;
+	color: #610200;
+}
+.util .right .login::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 14px;
+	background: #403f3a;
+	position: absolute;
+	top: 0;
+	right: 45px;
+}
+.util .right .join::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 14px;
+	background: #403f3a;
+	position: absolute;
+	top: 0;
+	left: -8px;
+}
+.util .right .membership::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 14px;
+	background: #403f3a;
+	position: absolute;
+	top: 0;
+	left: -8px;
+}
+
+.gnb_area {
+	background: #a69e98;
+}
+.util .main_logo {
+	text-indent: -9999px;
+	background: url(../img/layout/main_logo.png) no-repeat center center;
+	width: 122px;
+	height: 83px;
+	position: absolute;
+	top: 20px;
+	left: 540px;
+}
+.util .main_logo:hover {
+	background: url(../img/layout/main_logo_red2.png) no-repeat;
+}
+
+.gnb_area .inner {
+	height: 61px;
+	position: relative;
+}
+.gnb_area .inner .gnb {
+	height: 61px;
+	text-align: center;
+}
+.gnb_area .inner .gnb .depth1:hover a {
+	text-decoration: underline;
+	font-weight: bold;
+}
+.gnb_area .inner .depth1 {
+	display: inline-block;
+	margin-right: 33px;
+	line-height: 61px;
+}
+.gnb_area .inner .depth1:last-child {
+	margin-right: 0;
+}
+.gnb_area .inner .depth1 a {
+	font-size: 16px;
+	color: #41403b;
+}
+.gnb_area .inner .reservation {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: #41403b;
+	width: 180px;
+	height: 61px;
+}
+.gnb_area .inner .reservation a {
+	line-height: 61px;
+	font-size: 18px;
+	color: #fff;
+	margin: 0 auto;
+	display: block;
+	margin-left: 57px;
+}
+
+.depth2_area {
+	
+display: none;
+	background: #fff;
+	width: 100%;
+	height: 525px;
+	box-sizing: border-box;
+	padding-top: 50px;
+	z-index: 10000;
+	
+} /*디스플레이 처리한곳*/
+.depth2_area .inner {
+	position: relative;
+}
+.depth2_box {
+    display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-left: 90px;
+	box-sizing: border-box;
+}
+.depth2_box h2 {
+	font-size: 36px;
+	font-weight: 700;
+	position: relative;
+	width: 150px;
+	color: #41403b;
+    position: absolute;left: 330px;top: 0
+}
+.depth2_box>h2::after {
+	content: "";
+	display: block;
+	background: url(../img/layout/menu_icon.png) no-repeat;
+	width: 47px;
+	height: 47px;
+	position: absolute;
+	right: -30px;
+	top: -5px;
+}
+.depth2_box {
+    width: 1200px;
+	display: none;
+	clear: both;
+}
+.depth2_box3 h2{position: absolute;top: 0;left: 90px}
+.depth2_box3 ul{position: absolute;top: 0;left: 0px;display: inline-block}
+
+
+
+
+
+    
+    
+.depth2_box:nth-child(2) {
+	display: block;
+	width: 711px;
+}
+.depth2_box dl {
+	margin-top: 50px;
+	margin-right: 100px;
+	text-align: left;
+	float: left;
+}
+.depth2_box dl:last-child {
+	margin-right: 0;
+}
+
+.depth2_box dt {
+	color: #41403b;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.depth2_box ul {
+	margin-top: 10px;
+        
+}
+
+
+.depth2_box .depth2 li a {
+	color: #41403b;
+	font-size: 18px;
+	line-height: 24px;
+    display: block;
+    margin-left: 240px
+   
+}
+.dep2_promo{margin-left: 100px;margin-top: 100px}
+.depth2_box3 ul{margin-top: 100px}
+
+.depth2_room{width: 1200px;display: block;height: 500px;margin-left: 90px;}
+.suite{margin-left: 300px;}
+.ondol{margin-left: 490px;}
+.wed h2{display: block;margin-left: 250px;width: 210px}
+.wed dt{margin-left: 250px}
+
+.wedwed li a{margin-left: 250px;display: block}
+.con li a{margin-left:480px; }
+
+
+/*헤더부분 //뎁2 s */
+
+/*메인비주얼s*/
+.mainvisual {
+	width: 100%;
+	height: 700px;
+	position: relative; /*overflow: hidden*/
+}
+.mainvisual .slide img {
+	width: 1920px;
+	height: 700px;
+}
+.mainvisual .slide {
+	position: relative;
+}
+
+/*.slide{width: 5760px;position: relative;}
+.slide img{float: left;}*/
+
+/*.mainvisual .prev_btn a{display: block;background: url(../img/layout/prev_btn.png)no-repeat;width: 60px;height: 80px;text-indent: -9999px;position: absolute;top: 250px;left: 360px;}
+.mainvisual .next_btn a{display: block;background: url(../img/layout/next_btn.png)no-repeat;width: 60px;height: 80px;text-indent: -9999px;position: absolute;top: 250px;right: 360px;}
+
+.mainvisual .maru{margin: 0 auto;width:100px;text-align: center}
+.mainvisual .maru a{margin-top: 14px;display: inline-block}*/
+/*pagenation*/
+.btn_b {
+	width: 16px;
+	height: 16px;
+	border-radius: 9px;
+	background: rgba(65, 64, 59, 0.1);
+	text-indent: -9999px;
+	border: 1px solid #41403b;
+}
+.btn_b:hover {
+	background: rgb(65, 64, 59);
+}
+
+/*검색창ss*/
+#reservation_box {
+	position: absolute;
+	left: 358px;
+	bottom: 82px;
+	margin: auto;
+	outline: none;
+}
+fieldset {
+	width: 1200px;
+	height: 80px;
+	overflow: hidden;
+	background: #fff;
+	border: 1px solid #41403b;
+}
+fieldset legend {
+	text-indent: -9999px;
+}
+fieldset .main_hotel {
+	width: 258px;
+}
+fieldset .main_reservation div {
+	float: left;
+}
+fieldset .main_reservation strong {
+	font-size: 14px;
+	color: #807873;
+	font-weight: normal;
+}
+fieldset .main_reservation .hotel_name {
+	margin-left: 30px;
+	margin-top: 21px;
+}
+fieldset .main_reservation .hotel_ramada {
+	margin-left: 30px;
+	margin-top: 12px;
+	color: #403f3a;
+	font-size: 18px;
+}
+.main_hotel .hotel_ramada::after {
+	content: "";
+	height: 46px;
+	width: 2px;
+	background: #706f66;
+	position: absolute;
+	bottom: 15px;
+	left: 258px;
+}
+fieldset .main_reservation span {
+	display: block;
+}
+.checkin {
+	width: 125px;
+	margin-left: 55px;
+}
+.checkin strong {
+	margin-bottom: 12px;
+	display: block;
+}
+fieldset .main_reservation span {
+	font-size: 18px;
+	color: #403f3a;
+}
+.main_reservation .stay {
+	width: 50px;
+	margin-left: 28px;
+}
+.main_reservation .stay img {
+	padding-top: 0px;
+	display: block;
+}
+.main_reservation .stay span {
+	display: block;
+	font-size: 16px;
+	color: #807873;
+	padding-top: 4px;
+}
+.chckout {
+	width: 125px;
+	margin-left: 55px;
+}
+.checkout strong {
+	margin-bottom: 12px;
+	display: block;
+}
+/*fieldset .main_reservation .hotel_ramada::after{content: '';height: 46px;width: 2px;background: #706f66;position: absolute;top: 18px;left: 701px}*/
+.main_room {
+	width: 41px;
+	padding-left: 112px;
+}
+.main_room strong {
+	padding-bottom: 12px;
+	display: block;
+}
+.main_room span {
+	padding-bottom: 12px;
+	display: block;
+	text-align: center;
+}
+.main_person_1 {
+	width: 26px;
+	display: block;
+	padding-left: 28px;
+}
+.main_person_1 strong {
+	padding-bottom: 12px;
+	display: block;
+}
+.main_person_1 span {
+	display: block;
+	text-align: center;
+}
+.main_person_2 {
+	width: 41px;
+	padding-left: 28px;
+}
+.main_person_2 strong {
+	padding-bottom: 12px;
+	display: block;
+}
+.main_person_2 span {
+	padding-bottom: 12px;
+	display: block;
+	text-align: center;
+}
+.main_person_3 {
+	width: 26px;
+	padding-left: 28px;
+}
+.main_person_3 strong {
+	padding-bottom: 12px;
+	display: block;
+}
+.main_person_3 span {
+	padding-bottom: 12px;
+	display: block;
+	text-align: center;
+}
+.checkout span::after {
+	content: "";
+	height: 46px;
+	width: 2px;
+	background: #706f66;
+	position: absolute;
+	bottom: 15px;
+	right: 490px;
+	display: block;
+}
+.search_btn {
+	margin-top: 8px;
+}
+.search_btn button {
+	width: 144px;
+	height: 44px;
+	margin-left: 50px;
+	font-size: 18px;
+	color: #fff;
+	background: #41403b;
+    position: absolute;top: 20px;right: 15px
+}
+
+/*프로모션s*/
+.container h2 {
+	padding-top: 60px;
+	padding-bottom: 50px;
+	font-size: 40px;
+	color: #403f3a;
+	font-weight: bold;
+	margin-left: 45px;
+	position: relative;
+}
+.promotion_area .inner {
+	position: relative;
+}
+.promo_prev {
+	width: 30px;
+	height: 58px;
+	position: absolute;
+	top: 250px;
+	left: 0;
+}
+.promo_next {
+	width: 30px;
+	height: 58px;
+	position: absolute;
+	top: 250px;
+	right: 0;
+}
+
+.promotion_area .inner ul {
+	overflow: hidden;
+	margin-left: 45px;
+}
+.promotion_area .inner ul a {
+	float: left;
+	margin-right: 14px;
+}
+.promotion_area .promo_txt {
+	margin-top: 20px;
+	margin-left: 40px;
+	font-size: 22px;
+	color: #32312f;
+	font-weight: bold;
+}
+.promotion_area .promo_txt .date {
+	font-size: 16px;
+	color: #807873;
+	margin-top: 18px;
+	font-weight: normal;
+}
+.promotion_area .promo_box {
+	border-bottom: 1px dotted #706f66;
+	padding-bottom: 20px;
+}
+.promotion_area .promo_price {
+	text-align: right;
+	margin-top: 21px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #32312f;
+}
+.promotion_area .promo_price span {
+	font-size: 16px;
+	font-weight: normal;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.promotion_area .promo_page {
+	margin-bottom: 15px;
+	width: 100px;
+	text-align: center;
+	margin-left: 1060px;
+}
+.promotion_area .promo_page a {
+	display: inline-block;
+}
+/*프로모션//*/
+/*객실및편의시설s*/
+.room_etc_box .inner .room {
+	float: left;
+}
+.room_etc_box .room_thum {
+	margin-left: 45px;
+	width: 737px;
+	height: 561px;
+	padding-right: 10px;
+	position: relative;
+}
+.room_etc_box .yoku {
+	font-size: 12px;
+	position: absolute;
+	top: 20px;
+	right: 25px;
+}
+.room_etc_box .yoku a {
+	color: #403f3a;
+}
+.room_etc_box .room_info {
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 60px;
+	left: 100px;
+}
+.room_etc_box .room_info a {
+	color: #fff;
+}
+.room_etc_box .prev_btn a {
+	display: block;
+	background: url(../img/layout/prev_btn_black.png) no-repeat;
+	width: 30px;
+	height: 58px;
+	text-indent: -9999px;
+	position: absolute;
+	top: 250px;
+	left: 25px;
+}
+.room_etc_box .next_btn a {
+	display: block;
+	background: url(../img/layout/next_btn_black.png) no-repeat;
+	width: 30px;
+	height: 58px;
+	text-indent: -9999px;
+	position: absolute;
+	top: 250px;
+	right: 25px;
+}
+.room_thum .room_page {
+	position: absolute;
+	bottom: 20px;
+	right: 325px;
+	width: 100px;
+	text-align: center;
+	margin-left: 500px;
+}
+.room_thum .room_page a {
+	display: inline-block;
+} /*수정하기 */
+.inner_box .img {
+	width: 360px;
+	height: 180px;
+	margin-left: 795px;
+	margin-bottom: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+.inner_box .img:hover img {
+	transform: scale(1.1);
+	transition: transform.8s;
+}
+.inner_box .txt {
+	font-size: 36px;
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+}
+.inner_box .img a {
+	overflow: hidden;
+}
+.inner_box .img a img {
+	width: 360px;
+	display: block;
+}
+
+.inner_box .txt:last-child {
+	font-size: 33px;
+}
+.inner_box .txt:hover {
+	text-decoration: underline;
+}
+
+.room_pagenation {
+	width: 16px;
+	height: 16px;
+	border-radius: 9px;
+	background: rgba(100, 100, 100, 0.1);
+	text-indent: -9999px;
+	border: 1px solid #fff;
+}
+.room_pagenation:hover {
+	background: #fff;
+}
+
+/*hotel소개s*/
+
+.hotel_shokai .txt_box {
+	margin-left: 45px;
+	float: left;
+	width: 345px;
+}
+.hotel_shokai .txt_box p {
+	line-height: 26px;
+	font-size: 12px;
+	height: 334px;
+}
+.hotel_shokai .map_box {
+	margin-left: 24px;
+	display: inline-block;
+}
+/*주변관광지s*/
+
+.kanko {
+	background-color: #f0f0f0;
+	margin-top: 30px;
+	height: 568px;
+	position: relative;
+}
+.kanko_prev {
+	position: absolute;
+	left: 360px;
+	top: 215px;
+}
+.kanko_next {
+	position: absolute;
+	right: 360px;
+	top: 215px;
+}
+.kanko h3 {
+	display: block;
+	padding-top: 30px;
+	color: #403f3a;
+	margin-bottom: 50px;
+	font-size: 40px;
+	font-weight: bold;
+	margin-left: 45px;
+}
+.kanko .kanko_box1 img {
+	width: 360px;
+	height: 250px;
+	margin-bottom: 19px;
+}
+.kanko .kanko_box1 {
+	float: left;
+	margin-right: 14px;
+}
+.kanko .kanko_img {
+	margin-left: 45px;
+	overflow: hidden;
+}
+.kanko .kanko_img h4 {
+	font-size: 22px;
+	font-weight: bold;
+	color: #32312f;
+	margin-bottom: 18px;
+}
+.kanko .kanko_img .txt_box h4 {
+	margin-left: 24px;
+}
+.kanko .kanko_img .txt_box p {
+	color: #807873;
+	font-size: 16px;
+	line-height: 16px;
+	margin-left: 24px;
+}
+.kanko .kanko_img .soyo_time {
+	background-color: #c4c4c4;
+	width: 360;
+	height: 34px;
+	margin-top: 8px;
+	text-align: center;
+	line-height: 34px;
+}
+.kanko .kanko_img .soyo_time p {
+	color: #41403b;
+	font-size: 14px;
+}
+/*수정해야함*/
+.kanko .kanko_img .soyo_time_2 {
+	background-color: #c4c4c4;
+	width: 360;
+	height: 34px;
+	margin-top: 24px;
+	text-align: center;
+	line-height: 34px;
+}
+.kanko .kanko_img .soyo_time_2 p {
+	color: #41403b;
+	font-size: 14px;
+}
+
+.kanko_page_n {
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+}
+.kanko_page_n .btn_k {
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background: rgba(65, 64, 59, 0.1);
+	text-indent: -9999px;
+	border: 1px solid #41403b;
+	left: 50%;
+	display: inline-block;
+}
+.kanko_page_n .btn_k:hover {
+	background: rgb(65, 64, 59);
+}
+
+/*insta S*/
+.ramada_jeju .inner {
+	overflow: hidden;
+}
+.ramada_jeju .inner ul {
+	margin-left: 45px;
+}
+.ramada_jeju .inner li {
+	float: left;
+	margin-right: 10px;
+}
+
+/*footer-상단s*/
+
+.footer {
+	margin-top: 100px;
+}
+.footer .policy {
+	width: 100%;
+	background: #9e958e;
+	height: 100px;
+}
+.footer .policy .footer_left li {
+	float: left;
+	line-height: 100px;
+	padding-right: 88px;
+}
+.footer .policy .footer_left li:last-child {
+	padding-right: 0px;
+}
+.footer .policy .footer_left li a {
+	color: #1a140f;
+	font-size: 18px;
+	font-weight: bold;
+}
+.footer .policy .footer_right {
+	float: right;
+}
+.footer .policy .footer_right li {
+	float: left;
+	display: inline-block;
+	margin-left: 28px;
+}
+.footer .policy .footer_right li:first-child {
+	padding-top: 32px;
+}
+.footer .policy .footer_right li:nth-child(2) {
+	padding-top: 39px;
+}
+.footer .policy .footer_right li:nth-child(3) {
+	padding-top: 33px;
+}
+.footer .policy .footer_right li:nth-child(4) {
+	padding-top: 38px;
+}
+
+/*footer 상단//*/
+.footer .address_area .inner {
+	position: relative;
+}
+.footer .address_area {
+	padding-top: 44px;
+	background-color: #1a140f;
+	width: 100%;
+	height: 255px;
+	float: left;
+}
+
+.footer .address_area h2 a {
+	display: inline-block;
+	background: url(../img/layout/footer_logo.png) no-repeat;
+	width: 103px;
+	height: 70px;
+	text-indent: -9999px;
+	margin: 0 auto;
+	margin-top: 18px;
+}
+.footer .address_area .address p {
+	font-size: 14px;
+	color: #f0f0f0;
+	clear: both;
+	line-height: 24px;
+	position: absolute;
+	top: 0px;
+	left: 140px;
+}
+.footer .address_area .address p span {
+	font-size: 18px;
+	font-weight: bold;
+}
+/*푸터//*/
+
+.bx-wrapper {
+	border: none;
+	box-shadow: none;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	width: 16px;
+	height: 16px;
+	background: #fff;
+	border: 1px solid #41403b;
+	border-radius: 9px;
+}
+/*.bx-pager bx-default-pager{position: relative}*/
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #41403b;
+	width: 35px;
+}
+.bx-wrapper .bx-pager {
+	bottom: 10px;
+	left: 0;
+	right: 0;
+}
+.bx-wrapper .bx-controls-auto,
+.bx-wrapper .bx-pager {
+	position: absolute;
+	bottom: -30px;
+}
+/*.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{text-align: center;width: 50%;margin: 0 auto}*/
+
+.bx-wrapper .bx-next {
+	background: url(../img/layout/next_btn.png) no-repeat;
+	right: 360px;
+}
+.bx-wrapper .bx-prev {
+	background: url(../img/layout/prev_btn.png) no-repeat;
+	left: 360px;
+}
+.bx-wrapper .bx-controls-direction a {
+	width: 60px;
+	height: 80px;
+}
+.bx-wrapper .bx-next:focus,
+.bx-wrapper .bx-next:hover {
+	background-position: 0;
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus,
+.bx-wrapper .bx-pager.bx-default-pager a:hover {
+	background: #41403b;
+}

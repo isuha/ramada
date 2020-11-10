@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0}
+body{line-height: 1;}
+ul,li,ol{list-style: none}
+a{text-decoration: none;color:#000}
+h1,h2,h3,h4,h5,h6{margin-top: 0;margin-bottom: 0;font-size: 16px;font-weight: normal;line-height: 1;}
+address{font-style: normal}
+
+/*float해제*/
+.clearfix::after{content: '';display: block;clear: both}
+
+/*폼관련*/
+input,select{box-sizing: border-box}
+
+/*table관련*/
+table{border-collapse: collapse}
+

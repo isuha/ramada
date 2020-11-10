@@ -1,0 +1,59 @@
+@import url(main.css);
+
+.sub_wrap{width: 1200px;margin: auto;overflow: hidden}
+.sub_room_dream{height: 100px}
+.sub_room_dream h1{margin-top: 59px;margin-bottom: 19px;font-size: 36px;color: #41403b;font-weight: bold;text-align: center;}
+.sub_nav{float: right;margin-bottom: 46px;}
+.sub_nav p{float: left;color: #41403b;font-size: 24px;display: block;margin-left: 7px;}
+.sub_nav .sub_nav3{font-weight: bold;text-decoration: underline}
+.img_box{position: relative}
+.img_box .sub_main_prev img{position: absolute;bottom: 260px;left: 20px;}
+.img_box .sub_main_next img{position: absolute;bottom: 260px;right: 20px;}
+.sub_main_page{margin-top: 30px;text-align: center;}
+.sub_main_page a{width: 16px;height: 16px;border-radius: 9px;background: rgba(100,100,100,0.1);text-indent: -9999px;border: 1px solid #41403b;display: inline-block}
+.sub_main_page a:hover{background-color: #41403b}
+.sub_room_info{margin-top: 60px;border-bottom: 1px solid #41403b;overflow: hidden;margin-bottom: 28px}
+.sub_title{color: #41403b;font-size: 30px;font-weight: bold;margin-bottom: 22px;}
+.sub_room_info p{color: #41403b;font-size:18px;margin-left: 34px;}
+.room_info p{float: left;width: 800px}
+.sub_wrap button{width:160px;height: 46px;background-color: #41403b;border-radius: 10px;outline: none; color: #fff;font-size: 18px;float: right;margin-bottom: 44px;margin-right: 38px}
+
+.summary_info p{float: left;margin-right: 75px;color: #41403b;font-size: 24px;}
+.summary_info p:nth-child(1){margin-left: 34px}
+.summary_info p:nth-child(6){margin-right: 0}
+.sub_room_summary{border-bottom: 1px solid #41403b;overflow: hidden;margin-bottom: 28px}
+.summary_info span{font-size: 18px}
+.goods_info h1{color: #41403b;font-size: 24px;font-weight: bold;margin-bottom: 23px}
+.goods_info div{float: left;margin-right: 120px}
+.goods_info li{font-size: 18px;color: #41403b;margin-bottom: 2.4px}
+.goods_info div:nth-child(1){margin-left: 34px}
+.sub_room_goods{border-bottom: 1px solid  #41403b;overflow: hidden;}
+.sub_room_goods .goods_bath{margin-bottom: 68px}
+/*이용안내s*/
+.use_info{margin-top: 28px;border-bottom: 1px solid #41403b;overflow: hidden;}
+.use_info h3{color: #41403b;font-weight: bold;font-size: 24px;margin-bottom: 13px;}
+.use_info p{color: #41403b;font-size: 18px;margin-bottom: 12px;}
+.use_info h3:nth-of-type(4){margin-bottom: 44px}
+
+.use_info .use_info_txt{margin-left: 38px;overflow: hidden}
+
+.use_info_txt{float: left}
+.use_info .roomserv_btn{margin-top: 210px}
+/*추천객실s*/
+.sub_recom{position: relative;margin-top: 28px;overflow: hidden;width: 1200px}
+.sub_recom .sub_rec_prev a{position: absolute;top: 150px;left: 0;width: 30px;height: 58px;}
+.sub_recom .sub_rec_next a{position: absolute;top: 150px;right: 0px;width: 30px;height: 58px;display: block}
+
+
+.sub_recom {float: left}
+.sub_recom .recom_imgbox{float: left;}
+.box1{margin-left: 50px}
+.sub_recom .recom_imgbox img{width:359px;height:250px;margin-right: 14px;margin-top: 8px;margin-bottom: 19px;}
+.recom_imgbox h4{color: #32312f;font-size: 22px;margin-left: 26px;margin-bottom: 27px;}
+.recom_imgbox p{color: #807873;font-size: 14px;margin-left: 26px;margin-bottom: 54px; }
+.reco_page_n{clear: both;text-align: center;}
+.reco_page_n a{width: 16px;height: 16px;border-radius: 9px;background: rgba(100,100,100,0.1);text-indent: -9999px;border: 1px solid #41403b;display: inline-block;}
+.reco_page_n a:hover{background-color: #41403b}
+.bx-controls bx-has-controls-direction bx-has-pager{left: 0}
+.bx-wrapper .bx-controls-direction a.bx-prev{left: 20px}
+.bx-wrapper .bx-controls-direction a.bx-next{right: 20px}
